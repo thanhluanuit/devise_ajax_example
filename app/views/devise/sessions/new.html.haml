@@ -6,7 +6,8 @@
         .col-md-6
           .form-sign
             %h2.title Sign in
-            = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+            = form_for(resource, :as => resource_name, :url => session_path(resource_name), format: :json, remote: true) do |f|
+
               = devise_error_messages!
               .form-group
                 = f.label :email
