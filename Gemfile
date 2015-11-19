@@ -23,3 +23,7 @@ group :development, :test do
 end
 
 gem 'devise'
+
+gem 'pg'
+gem 'thin'
+gem 'rails_12factor', group: :production
