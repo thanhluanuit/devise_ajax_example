@@ -1,0 +1,8 @@
+.row
+  .col-md-12{:style => "text-align: center;"}
+    %p
+    - if user_signed_in?
+      = "Loged in: #{current_user.email}"
+    - else
+      Please login:
+      = link_to('Log in', new_user_session_path)
